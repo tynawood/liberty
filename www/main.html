@@ -404,12 +404,26 @@ As an Ambassador for Christ, I shall ever strive to be: </br>
 </div>
 
 
-<script>  function onDeviceReady(){
-    document.addEventListener("backbutton", onBackKeyDown, false);
-}
-function onBackKeyDown(){
-    alert('close');
-    return false;
+<script>   document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady()
+    {
+        // Add event listener to the back button
+        document.addEventListener("backbutton", backButtonHandler, false);
+    }
+ 
+    function backButtonHandler(e )
+   {
+ 
+      if( $("#page").length > 0 )
+      {
+         // Code to exit app
+         navigator.app.exitApp();
+      }
+      else
+      {
+        // Code to navigate to the history action
+         navigator.app.backHistory();
+      }
 }</script>
 
 	  <script>
