@@ -76,13 +76,13 @@
 }
 
 .hi-icon-locked:before {
-	content:url(../images/ca.png);
+	content:url(../images/ar.png);
 	background:none;
 }
 
 .hi-icon-locked:hover{
 
-	content:url(../images/ca1.png) ; }
+	content:url(../images/ar1.png) ; }
 	
 	
 	
@@ -93,7 +93,8 @@
 }
 
 .hi-icon-clock:before {
-	content: "\e004";
+	content:url(../images/yt.png);
+	background:none;
 }
 
 .hi-icon-videos:before {
